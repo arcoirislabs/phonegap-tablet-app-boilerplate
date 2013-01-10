@@ -1,0 +1,59 @@
+/* Styles for the dialog1 */
+#dialog1 {
+	background:#fff;
+	left:50%;
+	margin:-250px 0 0 -40%;
+	position:absolute;
+	top:-50%;
+	width:80%;
+	border-radius:5px;
+	box-shadow:0 3px 7px rgba(0,0,0,.25);
+	-moz-box-shadow:0 3px 7px rgba(0,0,0,.25);
+	-webkit-box-shadow:0 3px 7px rgba(0,0,0,.25);
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	text-decoration:none;
+}
+	/* Make the dialog1 appear when targeted */
+	#dialog1:target {
+		top:70%;
+		transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+	}
+#dialog1 header{
+	background:black;
+	border-bottom: 1px solid #e7e7e7;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	color:white;
+}
+#dialog1 footer {
+
+	background:#fff;
+	border-bottom: 2px solid #e7e7e7;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+}
+	#dialog1 footer {
+	text-decoration:none;
+		border:none;
+		border-top: 1px solid #e7e7e7;
+		border-radius: 0 0 6px 6px;
+		-moz-border-radius: 0 0 6px 6px;
+		-webkit-border-radius: 0 0 6px 6px;
+	}
+#dialog1 section,#dialog1 header, #dialog1 footer {
+text-decoration:none;
+	padding:10px;
+	z-index:200;
+}
+#dialog1 h2 {
+	margin:0;
+}
+#dialog1 .btn {
+	float:right;
+}

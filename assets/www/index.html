@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Your Tablet App</title>
+		<link href="css/dialog.css" rel="stylesheet">
+	  <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js">
+	  <script type="text/javascript" charset="utf-8" src="orientationLock.js"></script>
+	  <script type="text/javascript" charset="utf-8">
+      
+        var onDeviceReady = function() {
+            document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
+        };
+
+        function init() {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        }   
+</script>  
+<style>
+body{
+background-image:url('back.jpg');
+background-size:cover;color:white;}
+div#main {
+	position: relative;
+ 	margin: 0px auto; padding: 20px;
+ 	height:80%; width:83%;
+	color:white;
+	top:5%;
+ 	z-index: 1;
+background-color:#ff9601;
+-moz-border-radius:10px 10px 10px 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+-khtml-border-bottom-top-radius: 10px;
+    -khtml-border-top-left-radius: 10px;
+-webkit-box-shadow: 0px 4px 3px #000;
+text-decoration:none;}
+</style>
+  </head>
+  <body onload="init();" id="stage" class="theme"><div id="main">
+  <center>  <h1>Your tablet App</h1>
+
+	<p>Your app goes here.</p>
+	<p>
+    Click Here for your dialog box <a href="#dialog1"> Click here</a>
+    </p></center></div>
+<!--Dialog Boxes in the app-->
+<aside id="dialog1">
+		<header>
+			<h2>Dialog 1</h2>
+		</header>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<footer class="cf">
+			<a href="#" class="btn">Close</a>
+		</footer>
+	</aside>
+  </body>
+</html>
